@@ -4,10 +4,10 @@ from datetime import datetime
 # Create your models here.
 class Candle(models.Model):
     # banknift_id = models.AutoField(primary_key=True)
-    open = models.FloatField(unique=True, null=True)
-    high = models.FloatField(unique=True, null=True)
-    low = models.FloatField(unique=True, null=True)
-    close = models.FloatField(unique=True, null=True)
-    date = models.DateTimeField(unique=True, null=True)
-    volume = models.FloatField(unique=True, null=True)
+    open = models.FloatField(null=True)
+    high = models.FloatField(null=True)
+    low = models.FloatField(null=True)
+    close = models.FloatField(null=True)
+    date = models.CharField(null=True, max_length=20)
+    volume = models.FloatField(null=True)
    
